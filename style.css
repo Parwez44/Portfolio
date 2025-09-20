@@ -161,7 +161,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    position: fixed;
+    position: sticky;
     top: 2rem;
     z-index: 10;
     margin-bottom: 2rem;
@@ -434,4 +434,5 @@ textarea.form-input {
     border-radius: 10px;
 
 }
+
 
