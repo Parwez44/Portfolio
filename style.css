@@ -166,7 +166,7 @@ img {
     z-index: 10;
     margin-bottom: 2rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 640px) {
     .navbar { gap: 2rem; }
 }
 
@@ -434,5 +434,6 @@ textarea.form-input {
     border-radius: 10px;
 
 }
+
 
 
