@@ -434,6 +434,23 @@ textarea.form-input {
     border-radius: 10px;
 
 }
+@media (max-width: 640px) {
+    .navbar {
+        flex-wrap: wrap;        
+        gap: 0.5rem;
+        padding-inline: 0.75rem; 
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        flex: 1 1 45%;          
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;      
+    }
+}
+
+
 
 
 
