@@ -436,19 +436,27 @@ textarea.form-input {
 }
 @media (max-width: 640px) {
     .navbar {
-        flex-wrap: wrap;        
-        gap: 0.5rem;
-        padding-inline: 0.75rem; 
-        justify-content: space-between;
+        display: flex;
+        justify-content: flex-start;   
+        gap: 1rem;
+        overflow-x: auto;              
+        white-space: nowrap;          
+        padding-inline: 0.75rem;
     }
 
     .nav-link {
-        flex: 1 1 45%;          
-        text-align: center;
+        flex: 0 0 auto;                
         font-size: 0.9rem;
-        padding: 0.5rem 0;      
+        padding: 0.5rem 0.5rem;
+    }
+
+    
+    .navbar::-webkit-scrollbar {
+        display: none;
     }
 }
+
+
 
 
 
