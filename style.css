@@ -433,3 +433,15 @@ textarea.form-input {
     object-fit: cover;
     border-radius: 10px;
 }
+@media (max-width: 640px) {
+    .navbar {
+        gap: 0.4rem;              
+        padding: 0.5rem 0.5rem;    
+    }
+
+    .nav-link {
+        font-size: 0.8rem;         
+        padding: 0.3rem 0.5rem;    
+    }
+}
+
