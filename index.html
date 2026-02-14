@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.jpg">
     <title>Parwez Khan - Software Engineer</title>
-     <meta name="description" content="Parwez Khan - Software Engineer. Explore my Projects showcasing web development, projects, and coding expertise.">
+    <meta name="description" content="Parwez Khan - Software Engineer. Explore my Projects showcasing web development, projects, and coding expertise.">
     <meta name="keywords" content="Parwez Khan, Software Engineer, Projects, Web Development, Projects, Coding">
     <meta name="author" content="Parwez Khan">
-    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <main class="container">
 
+        
         <aside class="sidebar">
             <div class="card sidebar-content">
                 <div class="profile">
-                    <img class="profile-img" src="pk.png" alt="Parwez Khan">
+                    <img class="profile-img" src="pk.png" alt="Parwez Khan" onerror="this.src='https://ui-avatars.com/api/?name=Parwez+Khan&background=3a3a3a&color=facc15'">
                     <h1 class="profile-name">Parwez Khan</h1>
                     <p class="profile-title">Software Engineer</p>
                 </div>
@@ -78,15 +81,17 @@
             <nav class="navbar">
                 <a href="#about" class="nav-link active" data-page="about">About</a>
                 <a href="#resume" class="nav-link" data-page="resume">Resume</a>
+                <a href="#skills" class="nav-link" data-page="skills">Skills</a>
                 <a href="#Projects" class="nav-link" data-page="Projects">Projects</a>
                 <a href="#contact" class="nav-link" data-page="contact">Contact</a>
             </nav>
 
             <div class="content-card">
+                
                 <section id="about" class="page-section active">
                     <h2 class="section-title">About Me</h2>
                     <p>I am a passionate Software Engineer and Full Stack Developer with a strong foundation in building scalable, user-friendly, and efficient applications. Skilled in both front-end and back-end technologies, I enjoy turning ideas into impactful digital solutions. With a keen interest in problem-solving and continuous learning, I thrive on exploring new technologies, improving system performance, and delivering clean, maintainable code. I am particularly driven by creating software that not only works seamlessly but also enhances user experience and adds real value.</p>
-                    
+                     
                     <h3 class="subsection-title">What I'm Doing</h3>
                     <div class="services-grid">
                         <div class="service-item">
@@ -119,9 +124,17 @@
                         </div>
                     </div>
                 </section>
-
+    
                 <section id="resume" class="page-section">
-                    <h2 class="section-title">Resume</h2>
+                    <div class="resume-header-container">
+                        <h2 class="section-title">Resume</h2>
+
+                        <a href="Parwez_Khan_CV.pdf" class="download-btn" download>
+                            <ion-icon name="cloud-download-outline"></ion-icon>
+                            Download CV
+                        </a>
+                    </div>
+
                     <div class="resume-grid">
                         <div>
                             <div class="resume-heading">
@@ -137,15 +150,15 @@
                                 </li>
                                 <li class="timeline-item">
                                     <div class="timeline-icon-box"><ion-icon name="book-outline"></ion-icon></div>
-                                    <h4>New horizon secondary boarding school</h4>
+                                    <h4>New Horizon Secondary Boarding School</h4>
                                     <time>2021 - 2023</time>
-                                    <p>studied at New Horizon Secondary Boarding School from 2021 to 2023, completing my Class 12th in Science</p>
+                                    <p>Studied at New Horizon Secondary Boarding School from 2021 to 2023, completing my Class 12th in Science</p>
                                 </li>
                                 <li class="timeline-item">
                                     <div class="timeline-icon-box"><ion-icon name="book-outline"></ion-icon></div>
-                                    <h4>Moonlight secondary boarding school</h4>
+                                    <h4>Moonlight Secondary Boarding School</h4>
                                     <time>2021</time>
-                                    <p>completed my Class 10th in 2021 at Moonlight Secondary Boarding School</p>
+                                    <p>Completed my Class 10th in 2021 at Moonlight Secondary Boarding School</p>
                                 </li>
                             </ol>
                         </div>
@@ -166,18 +179,84 @@
                     </div>
                 </section>
 
+                <section id="skills" class="page-section">
+                    <h2 class="section-title">My Skills</h2>
+                    <p>My technical expertise spanning across languages, frameworks, and design tools.</p>
+                    
+                    <div class="skills-wrapper">
+                        <div class="skill-card">
+                            <div class="skill-icon"><ion-icon name="layers-outline"></ion-icon></div>
+                            <div class="skill-name">MERN Stack</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 95%"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="text-icon">C</div>
+                            <div class="skill-name">C Programming</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="text-icon">C++</div>
+                            <div class="skill-name">C++</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon"><ion-icon name="logo-javascript"></ion-icon></div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 95%"></div></div>
+                            </div>
+                        </div>
+
+
+                        <div class="skill-card">
+                            <div class="skill-icon"><ion-icon name="logo-python"></ion-icon></div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon"><ion-icon name="cafe-outline"></ion-icon></div>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 50%"></div></div>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon"><ion-icon name="color-palette-outline"></ion-icon></div>
+                            <div class="skill-name">Figma</div>
+                            <div class="skill-level-container">
+                                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 40%"></div></div>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="Projects" class="page-section">
                     <h2 class="section-title">Projects</h2>
                     <div class="filter-buttons">
                         <button class="Projects-filter-btn active" data-filter="all">All</button>
                         <button class="Projects-filter-btn" data-filter="web-development">Web Development</button>
                     </div>
-                    
+                     
                     <div class="Projects-grid">
                         <div class="Projects-item" data-category="web-development">
                             <div class="Projects-card">
-                                <a href="http://symbieat.free.nf/">
-                                <img src="image copy 3.png" alt="Food Web App"></a>
+                                <a href="https://parwez44.github.io/Food-Ordering-Website-Fronted/" target="_blank">
+                                <img src="image copy 3.png" alt="Food Web App" onerror="this.src='https://placehold.co/600x400/2c2c2c/FFF?text=Food+App'"></a>
                                 <div class="Projects-info">
                                     <h3>Food Web App</h3>
                                     <p>Web Development</p>
@@ -187,7 +266,7 @@
                         <div class="Projects-item" data-category="web-development">
                             <div class="Projects-card">
                                 <a href="https://parwez44.github.io/weather-app/">
-                                <img src="image.png" src alt="Weather Web App"></a>
+                                <img src="image.png" alt="Weather Web App" onerror="this.src='https://placehold.co/600x400/2c2c2c/FFF?text=Weather+App'"></a>
                                 <div class="Projects-info">
                                     <h3>Weather Web App</h3>
                                     <p>Web Development</p>
@@ -196,8 +275,8 @@
                         </div>
                         <div class="Projects-item" data-category="web-development">
                             <div class="Projects-card">
-                                <a href="https://pkrecipie.free.nf/">
-                                <img src="image copy 6.png" alt="Recipe Web App"></a>
+                                <a href="https://parwez44.github.io/Recipie-Website/">
+                                <img src="image copy 6.png" alt="Recipe Web App" onerror="this.src='https://placehold.co/600x400/2c2c2c/FFF?text=Recipe+App'"></a>
                                 <div class="Projects-info">
                                     <h3>Recipe Web App</h3>
                                     <p>Web Development</p>
@@ -206,39 +285,39 @@
                         </div>
                         <div class="Projects-item" data-category="web-development">
                             <div class="Projects-card">
-                                <img src="image copy 2.png" alt="Rental Web App">
+                                <img src="image copy 2.png" alt="Rental Web App" onerror="this.src='https://placehold.co/600x400/2c2c2c/FFF?text=Rental+App'">
                                 <div class="Projects-info">
                                     <h3>Rental Web App</h3>
                                     <p>Web Development</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="Projects-item" data-category="web-development">
+                        <div class="Projects-item" data-category="ML & Web Development">
                             <div class="Projects-card">
-                                <img src="image copy 4.png" alt="Dharmguru AI">
+                                <img src="image copy 4.png" alt="Dharmguru AI" onerror="this.src='https://placehold.co/600x400/2c2c2c/FFF?text=Dharmguru+AI'">
                                 <div class="Projects-info">
                                     <h3>Dharmguru AI</h3>
-                                    <p>Web Development</p>
+                                    <p>ML & Web Development</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="Projects-item" data-category="web-development">
+                        <div class="Projects-item" data-category="ML & Web Development">
                             <div class="Projects-card">
-                                <img src="image copy 5.png" alt="Digital Hospital">
+                                <img src="image copy 5.png" alt="Digital Hospital" onerror="this.src='https://placehold.co/600x400/2c2c2c/FFF?text=Digital+Hospital'">
                                 <div class="Projects-info">
                                     <h3>Digital Hospital</h3>
-                                    <p>Web Development</p>
+                                    <p>ML & Web Development</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
+                
                 <section id="contact" class="page-section">
                     <h2 class="section-title">Contact</h2>
                     <div class="map-placeholder">
-                        <img src="image copy.png" alt="">
+                        <img src="image copy.png" alt="Map Location" onerror="this.src='https://placehold.co/800x400/3a3a3a/777?text=Map+View'">
                     </div>
                     <h3 class="subsection-title">Contact Form</h3>
                     <form action="#" method="POST" class="contact-form">
@@ -259,6 +338,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
