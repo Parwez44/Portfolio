@@ -211,6 +211,22 @@ img {
     color: var(--accent);
 }
 
+navbar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none; 
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-link {
+    flex: 0 0 auto;  
+    min-width: max-content;
+}
+
+
 .content-card {
     background-color: var(--bg-secondary);
     border-radius: 1rem;
@@ -665,3 +681,4 @@ textarea.form-input {
 .download-btn ion-icon {
     font-size: 1.1rem;
 }
+
