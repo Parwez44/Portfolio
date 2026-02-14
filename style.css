@@ -211,7 +211,7 @@ img {
     color: var(--accent);
 }
 
-navbar {
+.navbar {
     overflow-x: auto;
     flex-wrap: nowrap;
     scrollbar-width: none; 
@@ -681,4 +681,5 @@ textarea.form-input {
 .download-btn ion-icon {
     font-size: 1.1rem;
 }
+
 
